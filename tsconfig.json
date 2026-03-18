@@ -1,12 +1,12 @@
 {
-    "compilerOptions":{
-        "target":"ES2020",
-        "module":"CommonJS",
-        "rootDir":"src",
-        "outDir":"dist",
-        "strict":true,
-        "esModuleInterop":true,
-        "types": ["node", "vitest/globals"]
-    },
-    "include": ["src"]
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": ".",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "types": ["node", "vitest/globals"]
+  },
+  "include": ["src", "app.ts", "server.ts"]
 }
