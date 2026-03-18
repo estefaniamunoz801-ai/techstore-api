@@ -1,4 +1,6 @@
 import express from "express";
+import { errorMiddleware } from "./src/api/middlewares/error.middleware";
+import { NotFoundError } from "./src/core/errors/NotFoundError";  
 
 const app = express();
 
@@ -10,5 +12,11 @@ app.get("/health", (req, res) => {
     message: "TechStore API is running",
   });
 });
+
+app.get("/error", (req, res) => {
+  throw new NotFoundError("Test error");
+});
+
+app.use(errorMiddleware);
 
 export default app;
