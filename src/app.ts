@@ -1,6 +1,6 @@
 import express from "express";
-import { errorMiddleware } from "./src/api/middlewares/error.middleware";
-import { NotFoundError } from "./src/core/errors/NotFoundError";  
+import { errorMiddleware } from "./infrastructure/api/http/middlewares/error.middleware";
+import { NotFoundError } from "./core/errors/NotFoundError";  
 
 const app = express();
 
